@@ -1,0 +1,425 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Piazzolla:ital,opsz,wght@0,8..30,100..900;1,8..30,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+/*--------- Universal styles start --------*/
+
+*{
+    margin: 0;
+    padding: 0;  
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*--------- Universal styles end-------*/
+
+
+/*---------- background start--------*/
+
+.bg-gradient {
+    background: linear-gradient(45deg, rgb(132, 0, 139) 20%, rgb(127, 20, 220), rgb(85, 0, 255) 60%, rgb(0, 0, 255), rgb(196, 228, 255));
+}
+
+.bg-lit-gradient{
+    background: linear-gradient(45deg, rgba(132, 0, 139, 0.566) 20%, rgba(127, 20, 220, 0.566), rgba(85, 0, 255, 0.566) 60%, rgba(0, 0, 255, 0.566), rgba(196, 228, 255, 0.566));
+
+}
+
+.bg-black{
+    background-color: rgba(0, 0, 0, 0.733);
+}
+
+.bg-img {
+    background-image: url("banner.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: absolute;
+    background-size: 100%;
+}
+
+/*------ background end---------- */
+
+
+/*------ tag styles start------- */
+
+/*heading tags style*/
+h1{
+    font-size: 2rem;
+    font-weight: 900;
+    font-family: "Playfair Display", serif;
+    letter-spacing: 2.5px;
+    padding: 14px 14px;
+
+}
+
+h2{
+    font-size: 1.7rem;
+    font-weight: 700;
+    font-family: "Playfair Display", serif;
+    padding: 12px 12px;
+    letter-spacing: 2px;
+
+}
+
+h3{
+    font-size: 1.51rem;
+    font-weight: 500;
+    font-family: "Playfair Display", serif;
+    padding: 10px;
+    letter-spacing: 1.5px;
+
+}
+
+h4{
+    font-size:1.33rem ;
+    font-weight: 350;
+    font-family: "Playfair Display", serif;
+    padding:8px;
+    letter-spacing: 1px;
+}
+
+h5{
+    font-size:1.13rem ;
+    font-weight: 250;
+    font-family: "Playfair Display", serif;
+    padding:6px;
+    letter-spacing: 1px;
+}
+
+/*para tag style*/
+
+p{
+    font-size: 1rem;
+    font-weight: 500;
+    font-family:"Piazzolla", serif;
+    padding: 6px;
+    letter-spacing: 0.5px;
+}
+
+/*list tag style*/
+li {
+    list-style: none;
+    margin: 0 12px;
+}
+
+/*anchor tag style*/
+a{
+    font-family: "Robot", serif;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+a:hover{
+    background-color:rgb(13, 0, 255);
+}
+
+/*label tag style*/
+label{
+    font-size: 1rem;
+    font-weight: 500;
+    font-family:"Piazzolla", serif;
+    padding: 6px;
+    letter-spacing: 0.5px;
+}
+
+/*section tag style*/
+
+section{
+    padding: 5px;
+    margin: 5px;
+}
+
+/*------------ tags style end ------------*/
+
+
+/*------------- Font colors start -------------*/
+
+.white{
+    color: white;
+}
+
+.black{
+    color: black;
+}
+
+/*------------- Font colors end-------------*/
+
+/*------------- text style start -------------*/
+
+.bold{
+    font-weight: bold;
+}
+
+.text-space {
+    letter-spacing: 7px;   
+}
+
+.word-wrap{
+    max-width: 600px;
+    word-wrap: break-word;    
+}
+
+/*------------- text style end -------------*/
+
+/*------------- flex start-------------*/
+
+.inline-flex {
+    display: inline-flex;   
+}
+
+.flex{
+    display: flex;
+}
+
+/*------------- flex end -------------*/
+
+/*------------- alingment start -------------*/
+
+.item-center {
+    align-items: center;
+    justify-content: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.bar {
+    display: flex;
+    height: 37px;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+/*------------- alingment end -------------*/
+
+/*------------- button start -------------*/
+
+/* blue button*/
+
+.blue-btn {
+    word-wrap: break-word;
+    padding: 10px 10px;
+    color: white;
+    background: linear-gradient(45deg, rgb(132, 0, 139) 20%, rgb(127, 20, 220), rgb(85, 0, 255) 60%, rgb(0, 0, 255), rgb(196, 228, 255));
+    border: 30;
+    border-radius: 20px;
+    border-color: darkblue;
+    cursor: pointer;
+    font-family: "Robot", serif;
+    font-weight: 700;
+}
+.blue-btn:hover {
+    transform: translateY(-3px);
+}
+.blue-btn:active {
+    transform: translateY(3px);
+}
+
+/* transparent button */
+
+.trans-btn {
+    word-wrap: break-word;
+    padding: 12px 12px;
+    margin: 12px 12px;
+    color: white;
+    background-color: rgba(237, 229, 229, 0.344);
+    border: 30;
+    border-color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: "Robot", serif;
+    font-weight:700 ;
+}
+.trans-btn:hover {
+    transform: translateY(-3px);
+}
+.trans-btn:active {
+    transform: translateY(3px);
+}
+
+/* search button */
+
+.srch-btn {
+    padding: 8px 8px;
+    background-color: black;
+    cursor: pointer;
+    border: 30;
+    border-color: white;
+}
+
+/*------------- image style start -------------*/
+
+.img30{
+    height: 30px;
+    width: 30px;
+}
+
+.img40{
+    height: 40px;
+    width: 40px;
+}
+
+.img100{
+    height: 100px;
+    width: auto;
+}
+
+.scl-img{
+    height: 25px;
+    width: 25px;
+    padding: 0px 10px;
+}
+
+/*------------- image style end -------------*/
+
+/*------------- border style start -------------*/
+
+.border20{
+    border-radius: 20%;
+}
+
+.border50{
+    border-radius: 50%;
+}
+
+/*------------- border style end -------------*/
+
+/*------------- box style start -------------*/
+
+/* about-us box*/
+
+.cont-box {
+    padding: 20px;
+    margin: 19px;
+    width: 70%;
+}
+.img-box{
+    height: 220px;
+    width: 100%;
+}
+
+/* 3 boxes */
+
+.box3{
+    width: 33.3333333333333333333%;
+}
+
+/* 4 boxes */
+
+.box4{
+    width: 25%;
+    padding: 20px 20px;
+    
+}
+.box4:hover{
+    transform: translateY(-10px);
+    cursor: pointer;
+}
+.box4 img{
+    height: 200px;
+    width: 200px;
+    padding: 5px 10px;
+    margin: 5px 10px;
+}
+.box4 a img{
+    height: 30px;
+    width: 30px;
+    padding: 0px 4px;
+    margin: 0px 3px;
+}
+
+/* 5 boxes */
+
+.box5{
+    width: 20%;
+    padding: 15px 15px;
+    
+}
+.box5:hover{
+    transform: translateY(-10px);
+    cursor: pointer;
+}
+.box5 img{
+    height: 150px;
+    width: 150px;
+    border-radius: 40%;
+    padding: 0px 20px;
+    margin: 5px 0px;
+}
+
+/* comment box*/
+
+.comt-box{
+    width: 33.333333%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px;
+}
+.comt-box div {
+    padding-left: 20px;       
+}
+
+/*------------- box style end -------------*/
+
+/*------------- padding & margin start -------------*/
+
+/* pm-x format */
+
+.pm-20{
+    padding: 20px;
+    margin: 20px;
+}
+
+.pm-10{
+    padding: 10px;
+    margin: 10px;
+}
+
+.pm-5{
+    padding: 5px;
+    margin: 5px;
+}
+
+/* pm-x-y format */
+
+.pm-10-20{
+    padding:10px 20px;
+}
+
+.p10-m17{
+    padding: 10px;
+    margin: 17px;
+}
+
+/* pm-x-0 format */
+
+.pm-20-0{
+    padding: 20px 0px;
+}
+
+/* pm-0-x format */
+
+.pm-0-20{
+    padding: 0px 20px;
+    margin: 0px 20px
+}
+
+.pm-0-5{
+    padding:0px 5px ;
+    margin:0px 5px;
+}
+
+.pm-0-3{
+    padding:0px 3px ;
+    margin:0px 3px;
+}
+
+/*------------- padding & margin start -------------*/
